@@ -1,236 +1,315 @@
-# Instructions
-Build a complete, production-quality corporate website for a software company called "Once and Zeros".
+# Once and Zeros Website Instructions
 
-TECH STACK REQUIREMENTS:
-- Use only HTML5, CSS3, and vanilla JavaScript.
-- Bootstrap 5 via CDN is allowed.
-- Font Awesome via CDN is allowed.
-- Google Fonts via CDN is allowed.
-- Do NOT use React, Vue, Angular, Svelte, Next.js, Nuxt, or any frontend framework.
-- The website must be fully responsive and mobile-friendly.
-- The output should be organized into:
-  - index.html
-  - styles.css
-  - script.js
+## Project Overview
 
-COMPANY DETAILS:
+Create a modern, premium, professional website for a software engineering company called Once and Zeros.
 
-Company Name:
-Once and Zeros
+This is NOT a freelancer portfolio.
 
-Tagline:
-Turning Ideas into Digital Reality
+This is NOT a React Native agency website.
 
-Company Description:
-Once and Zeros is a modern software development company specializing in mobile applications, web applications, cloud solutions, and digital product engineering. We help startups and businesses build scalable, high-performance software products.
+This is NOT a template-style software agency website.
 
-TARGET AUDIENCE:
-- Startups
-- Small and Medium Businesses
-- Enterprises
-- Founders looking for MVP development
-- Companies seeking mobile and web development services
+The goal is to establish Once and Zeros as a serious software engineering company that helps businesses build custom digital solutions, cloud applications, web platforms, SaaS products, ERP systems, internal business systems, and mobile applications.
 
-DESIGN REQUIREMENTS:
+The target audience is:
 
-Style:
-- Modern
+- Business owners
+- Startup founders
+- Company directors
+- Operations managers
+- Decision makers
+- SMEs
+- Enterprise organizations
+
+The website should communicate trust, professionalism, technical excellence, and long-term partnership.
+
+---
+
+## Design Reference
+
+A design reference image will be provided.
+
+IMPORTANT:
+
+DO NOT copy the content, layout, illustrations, branding, colors, sections, or business model from the reference image.
+
+Use ONLY the design language and visual direction.
+
+Extract and apply:
+
+- Premium feel
+- Clean visual hierarchy
+- Generous whitespace
+- Rounded containers
+- Modern typography
+- Editorial-style layout
+- Sophisticated spacing
+- Professional visual rhythm
+- High-end SaaS aesthetic
+
+The final website must feel original and unique to Once and Zeros.
+
+---
+
+## Design Requirements
+
+### Overall Feel
+
+The website should feel:
+
 - Professional
+- Modern
 - Premium
-- Technology-focused
-- Clean and minimalist
+- Trustworthy
+- Minimal
+- Engineering-focused
+- Business-focused
 
-Color Palette:
-- Dark theme
-- Primary: #0D1117
-- Secondary: #161B22
-- Accent: #3B82F6
-- Text: #FFFFFF
-- Muted Text: #8B949E
+Avoid:
 
-Typography:
-- Use Inter or Poppins font
+- Generic agency templates
+- Excessive gradients
+- Loud colors
+- Overly animated sections
+- Cheap marketing aesthetics
+- Crypto/Web3 design language
+- Startup clichés
 
-ANIMATIONS:
-- Smooth scrolling
-- Fade-in animations on scroll
-- Hover effects
-- Animated counters
-- Subtle hero background animation
+---
 
-SECTIONS REQUIRED:
+### Color System
 
-1. NAVIGATION BAR
-- Sticky navbar
-- Company logo text
+Primary Direction:
+
+- Light theme
+- White background
+- Soft neutral surfaces
+- Subtle shadows
+- High readability
+
+Use:
+
+- White
+- Off-white
+- Light gray surfaces
+- Dark typography
+- One carefully selected accent color
+
+The interface should feel calm and premium.
+
+---
+
+### Typography
+
+Typography should be a major design element.
+
+Requirements:
+
+- Large hero typography
+- Strong visual hierarchy
+- Clean modern font
+- Excellent spacing
+- Premium editorial feel
+
+---
+
+## Company Positioning
+
+Position Once and Zeros as:
+
+"A software engineering company that builds modern digital solutions for businesses."
+
+Do NOT focus heavily on technologies.
+
+Focus on business outcomes and software solutions.
+
+Technology should support the story, not be the story.
+
+---
+
+## Core Services
+
+Present services in a professional way:
+
+### Custom Software Development
+
+Tailored software solutions designed around business needs.
+
+### Web Applications
+
+Modern cloud-based web platforms and business systems.
+
+### Mobile Applications
+
+Mobile experiences for customers, employees, and management teams.
+
+### ERP & Business Systems
+
+Systems that support company operations, management, and growth.
+
+### SaaS Development
+
+Subscription-based platforms and scalable digital products.
+
+### System Integration
+
+Connecting platforms, services, and business workflows.
+
+---
+
+## Website Structure
+
+### Navigation
+
 - Home
 - Services
-- Technologies
-- Projects
+- Solutions
 - About
 - Contact
-- Mobile responsive hamburger menu
 
-2. HERO SECTION
-Large headline:
+Simple and minimal.
 
-"Building Exceptional Digital Products"
+---
 
-Subheadline:
+### Hero Section
 
-"We design and develop modern mobile apps, web platforms, and cloud solutions that help businesses grow."
+The hero section should immediately communicate:
 
-Buttons:
-- Get Started
-- View Our Work
+- Professional software engineering
+- Business-focused solutions
+- Modern digital products
 
-Hero illustration area:
-Use technology-themed placeholder graphics/icons.
+Strong headline.
 
-3. SERVICES SECTION
+Clear supporting text.
 
-Display cards for:
+Primary CTA:
+- Start a Project
 
-- Mobile App Development
-  - React Native
-  - iOS
-  - Android
+Secondary CTA:
+- Learn More
 
-- Web Development
-  - Frontend
-  - Backend
-  - Full Stack
+---
 
-- Cloud Solutions
-  - AWS
-  - API Development
-  - DevOps
+### Solutions Section
 
-- Product Engineering
-  - MVP Development
-  - SaaS Platforms
-  - Enterprise Systems
+Explain how Once and Zeros helps organizations through software solutions.
 
-4. TECHNOLOGIES SECTION
+Focus on:
 
-Display technology badges/cards for:
+- Scalability
+- Reliability
+- Modern architecture
+- Accessibility
+- Business growth
 
-Frontend:
-- HTML
-- CSS
-- JavaScript
-- React
+---
 
-Backend:
-- Node.js
-- Express
-- NestJS
+### Services Section
 
-Mobile:
-- React Native
+Show core service offerings.
 
-Database:
-- PostgreSQL
-- MongoDB
-- MySQL
+Use premium cards and visual hierarchy.
 
-Cloud:
-- AWS
-- Docker
-- Kubernetes
+Avoid generic icon grids.
 
-5. COMPANY STATS SECTION
+---
 
-Animated counters:
+### Process Section
 
-- 5+ Years Experience
-- 20+ Projects Built
-- 100K+ Users Impacted
-- 99% Client Satisfaction
+Show a professional workflow:
 
-6. FEATURED PROJECTS SECTION
+1. Discovery
+2. Planning
+3. Design
+4. Development
+5. Deployment
+6. Support
 
-Create 3 professional showcase cards:
+---
 
-Project 1:
-FinTech Mobile App
+### Why Once and Zeros
 
-Project 2:
-E-Commerce Platform
+Highlight:
 
-Project 3:
-Healthcare Management System
+- Custom solutions
+- Modern technologies
+- Scalable systems
+- Long-term thinking
+- Quality engineering
 
-Each project card should contain:
-- Image placeholder
-- Description
-- Technologies used
-- View Details button
+---
 
-7. WHY CHOOSE US SECTION
+### About Section
 
-Cards:
+Explain:
 
-- Senior Engineering Expertise
-- Scalable Architecture
-- Modern Technologies
-- Fast Delivery
-- Security First
-- Long-Term Partnership
+- Company mission
+- Company vision
+- Commitment to delivering high-quality software solutions
 
-8. ABOUT SECTION
+Keep it professional and concise.
 
-Title:
-About Once and Zeros
+---
 
-Content:
-Explain the company's mission to build reliable, scalable, and innovative software solutions while helping businesses transform digitally.
+### Contact Section
 
-Include:
-Mission
-Vision
-Core Values
+Professional contact form:
 
-9. TESTIMONIALS SECTION
-
-Create 3 professional client testimonials with placeholder content.
-
-10. CONTACT SECTION
-
-Include:
-- Contact form
 - Name
-- Email
 - Company
-- Message
-
-Display:
 - Email
-- Phone
-- Location
+- Project Details
 
-Form should have frontend validation.
+Strong CTA encouraging project discussions.
 
-11. FOOTER
+---
 
-Include:
-- Company description
-- Quick links
-- Services
-- Social media icons
-- Copyright
+## Technical Requirements
 
-EXTRA FEATURES:
+### Technology
 
-- Back-to-top button
-- Scroll progress indicator
-- Dark professional aesthetic
-- SEO-friendly HTML structure
-- Proper meta tags
-- Open Graph tags
+Use only:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+Allowed:
+
+- Bootstrap CDN
+- Font Awesome CDN
+- Google Fonts
+
+Do NOT use:
+
+- React
+- Vue
+- Angular
+- Next.js
+- Nuxt
+- Svelte
+
+---
+
+### Performance
+
+Prioritize:
+
+- Fast loading
+- Accessibility
+- SEO
+- Responsive design
 - Semantic HTML
-- Optimized performance
-- Accessible design
-- Clean code with comments
+- Clean code structure
 
-The final website should look comparable to a modern software agency website and be ready to deploy directly to Netlify, GitHub Pages, Cloudflare Pages, or any static hosting provider.
+---
+
+## Final Goal
+
+The final result should look like the website of a modern software engineering company that businesses would trust with large software projects.
+
+Visitors should leave with the impression:
+
+"Once and Zeros is a professional software engineering partner capable of building serious digital solutions."
