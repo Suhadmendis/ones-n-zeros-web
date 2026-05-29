@@ -28,7 +28,7 @@ The website should communicate trust, professionalism, technical excellence, and
 
 ## Design Reference
 
-A design reference image will be provided.
+A design reference image is available at `Design/home.jpg` in this repository.
 
 IMPORTANT:
 
