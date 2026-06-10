@@ -7,7 +7,7 @@
   <title>Once and Zeros — Software Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -24,7 +24,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn btn-primary nav-cta">Start a Project</a>
+      <a href="#contact" class="btn btn-primary nav-cta">Start a Project &rarr;</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -35,35 +35,87 @@
 
     <!-- HERO -->
     <section class="hero" id="home">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-watermark" aria-hidden="true">ONCE&nbsp;&amp;&nbsp;ZEROS</div>
       <div class="hero-container">
-        <span class="label">Software Engineering Company</span>
-        <h1 class="hero-headline">
-          We build software<br />
-          <em>businesses rely on</em>
-        </h1>
-        <p class="hero-sub">
-          From web platforms and mobile applications to ERP systems and SaaS products —
-          we engineer custom digital solutions designed around your business.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-dark">Start a Project</a>
-          <a href="#solutions" class="btn btn-ghost">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="hero-content">
+          <span class="label label--blue">Software Engineering Company</span>
+          <h1 class="hero-headline">
+            We build software<br />
+            <em>businesses rely on</em>
+          </h1>
+          <p class="hero-sub">
+            From web platforms and mobile applications to ERP systems and SaaS products —
+            we engineer custom digital solutions designed around your business.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-accent">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#solutions" class="btn btn-ghost">Learn More</a>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Projects Delivered</span>
+        <div class="hero-visual">
+          <div class="hero-card hero-card--main">
+            <div class="hc-header">
+              <div class="hc-dot hc-dot--green"></div>
+              <span class="hc-badge">Active Project</span>
+            </div>
+            <div class="hc-title">E-Commerce Platform</div>
+            <div class="hc-sub">Custom SaaS &mdash; In Development</div>
+            <div class="hc-bar-track">
+              <div class="hc-bar-fill" style="width:78%"></div>
+            </div>
+            <div class="hc-bar-label">78% Complete</div>
+            <div class="hc-avatars">
+              <div class="hc-avatar" style="background:#4f46e5">J</div>
+              <div class="hc-avatar" style="background:#0ea5e9">S</div>
+              <div class="hc-avatar" style="background:#10b981">A</div>
+            </div>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">8+</span>
-            <span class="stat-label">Years of Experience</span>
+          <div class="hero-mini-cards">
+            <div class="hero-card hero-card--mini">
+              <i class="fa-solid fa-rocket hc-icon"></i>
+              <div>
+                <span class="hc-mini-num">50+</span>
+                <span class="hc-mini-label">Projects Delivered</span>
+              </div>
+            </div>
+            <div class="hero-card hero-card--mini">
+              <i class="fa-solid fa-star hc-icon hc-icon--gold"></i>
+              <div>
+                <span class="hc-mini-num">8+</span>
+                <span class="hc-mini-label">Years Experience</span>
+              </div>
+            </div>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Custom Solutions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="stats-strip-inner">
+          <div class="stats-strip-left">
+            <p class="stats-strip-tag">Our Track Record</p>
+            <h2 class="stats-strip-headline">CUSTOM SOFTWARE,<br />REAL RESULTS.</h2>
           </div>
+          <div class="stats-strip-divider"></div>
+          <div class="stats-strip-right">
+            <div class="strip-stat">
+              <span class="strip-stat-num">50+</span>
+              <span class="strip-stat-label">Projects Delivered</span>
+            </div>
+            <div class="strip-stat">
+              <span class="strip-stat-num">8+</span>
+              <span class="strip-stat-label">Years Engineering</span>
+            </div>
+            <div class="strip-stat">
+              <span class="strip-stat-num">100%</span>
+              <span class="strip-stat-label">Custom Solutions</span>
+            </div>
+          </div>
+          <a href="#services" class="btn btn-ghost-light">View Services <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -75,12 +127,10 @@
           <div class="split-left">
             <span class="label">What We Do</span>
             <h2 class="section-title">Software that moves your business forward.</h2>
-            <a href="#services" class="btn btn-dark">Explore Services</a>
+            <p class="split-sub">Once and Zeros builds modern, scalable digital solutions that help organisations operate more efficiently, reach more customers, and grow with confidence.</p>
+            <a href="#services" class="btn btn-dark">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="split-right">
-            <p class="body-large">
-              Once and Zeros builds modern, scalable digital solutions that help organisations operate more efficiently, reach more customers, and grow with confidence.
-            </p>
             <div class="solution-pillars">
               <div class="pillar">
                 <div class="pillar-icon"><i class="fa-solid fa-scale-balanced"></i></div>
@@ -238,7 +288,7 @@
             <span class="label">Why Once and Zeros</span>
             <h2 class="section-title">Engineering built<br />for the long term.</h2>
             <p>We work as a dedicated engineering partner — not a vendor. That means we think beyond the current sprint and focus on what's right for your business over time.</p>
-            <a href="#contact" class="btn btn-dark">Start a Conversation</a>
+            <a href="#contact" class="btn btn-dark">Start a Conversation <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="why-right">
             <div class="why-item">
@@ -281,9 +331,62 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section about" id="about">
+    <!-- GROW BEYOND (dark feature section) -->
+    <section class="grow-section">
+      <div class="grow-globe" aria-hidden="true">
+        <div class="globe-sphere"></div>
+        <div class="globe-ring globe-ring--1"></div>
+        <div class="globe-ring globe-ring--2"></div>
+      </div>
+      <div class="container grow-container">
+        <span class="label label--light">Our Promise</span>
+        <h2 class="grow-headline">BUILD BEYOND<br />LIMITS WITH<br />ONCE AND ZEROS</h2>
+        <p class="grow-sub">Whether you're launching an MVP, scaling an enterprise system, or replacing legacy software — we make it simple, fast, and built to last.</p>
+        <a href="#contact" class="btn btn-accent">Explore More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section class="section serve" id="about">
       <div class="container">
+        <div class="section-header">
+          <span class="label">Who We Serve</span>
+          <h2 class="section-title">Built for businesses<br />of every size.</h2>
+        </div>
+        <div class="serve-grid">
+          <div class="serve-card serve-card--dark">
+            <div class="serve-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Startups &amp; Founders</h3>
+            <p>Turn your idea into a working product. We build your MVP fast, without cutting corners that matter.</p>
+            <ul class="serve-list">
+              <li><i class="fa-solid fa-check"></i> MVP &amp; product development</li>
+              <li><i class="fa-solid fa-check"></i> Technical co-founder support</li>
+              <li><i class="fa-solid fa-check"></i> Investor-ready architecture</li>
+            </ul>
+          </div>
+          <div class="serve-card serve-card--blue">
+            <div class="serve-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>SMEs &amp; Scale-Ups</h3>
+            <p>Modernise your operations, automate your workflows, and grow your digital footprint with confidence.</p>
+            <ul class="serve-list">
+              <li><i class="fa-solid fa-check"></i> Custom business systems</li>
+              <li><i class="fa-solid fa-check"></i> Process automation</li>
+              <li><i class="fa-solid fa-check"></i> Digital transformation</li>
+            </ul>
+          </div>
+          <div class="serve-card serve-card--light">
+            <div class="serve-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <h3>Enterprises</h3>
+            <p>Large-scale platforms, ERP integrations, and complex system architecture — delivered with precision.</p>
+            <ul class="serve-list">
+              <li><i class="fa-solid fa-check"></i> Enterprise system integration</li>
+              <li><i class="fa-solid fa-check"></i> Legacy modernisation</li>
+              <li><i class="fa-solid fa-check"></i> Scalable cloud architecture</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mission / Vision / Commitment -->
         <div class="about-inner">
           <div class="about-card about-card--mission">
             <span class="label label--light">Mission</span>
@@ -316,6 +419,20 @@
               <i class="fa-solid fa-envelope"></i>
               <span>hello@onceandzeros.com</span>
             </div>
+            <div class="contact-highlights">
+              <div class="contact-highlight">
+                <i class="fa-solid fa-clock"></i>
+                <span>Response within 1 business day</span>
+              </div>
+              <div class="contact-highlight">
+                <i class="fa-solid fa-lock"></i>
+                <span>NDAs available on request</span>
+              </div>
+              <div class="contact-highlight">
+                <i class="fa-solid fa-globe"></i>
+                <span>Working with clients globally</span>
+              </div>
+            </div>
           </div>
           <div class="contact-right">
             <form class="contact-form" id="contactForm" novalidate>
@@ -337,7 +454,7 @@
                 <label for="message">Project Details</label>
                 <textarea id="message" name="message" rows="5" placeholder="Tell us about your project — what you're building, the problem it solves, and any timelines or constraints." required></textarea>
               </div>
-              <button type="submit" class="btn btn-dark btn-full">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+              <button type="submit" class="btn btn-accent btn-full">Send Message <i class="fa-solid fa-arrow-right"></i></button>
               <p class="form-note" id="formNote"></p>
             </form>
           </div>
@@ -376,7 +493,7 @@
         <div class="footer-cta">
           <h5>Ready to start?</h5>
           <p>Let's talk about your project.</p>
-          <a href="#contact" class="btn btn-dark">Start a Project</a>
+          <a href="#contact" class="btn btn-accent">Start a Project</a>
         </div>
       </div>
       <div class="footer-bottom">
