@@ -100,6 +100,9 @@ function initConsultationForm() {
   if (!form) return;
 
   var success = document.querySelector('.form-success');
+  var error = document.querySelector('.form-error');
+  var errorText = error ? error.querySelector('span') : null;
+  var submitBtn = form.querySelector('button[type="submit"]');
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -109,8 +112,35 @@ function initConsultationForm() {
       return;
     }
 
-    form.hidden = true;
-    if (success) success.hidden = false;
-    form.reset();
+    if (error) error.hidden = true;
+    if (submitBtn) submitBtn.disabled = true;
+
+    fetch('server/mails/send-consultation.php', {
+      method: 'POST',
+      body: new FormData(form)
+    })
+      .then(function (response) {
+        return response.json().then(function (data) {
+          return { ok: response.ok, data: data };
+        });
+      })
+      .then(function (result) {
+        if (!result.ok || !result.data.success) {
+          throw new Error(result.data.error || 'Something went wrong. Please try again.');
+        }
+
+        form.hidden = true;
+        if (success) success.hidden = false;
+        form.reset();
+      })
+      .catch(function (err) {
+        if (error) {
+          if (errorText) errorText.textContent = err.message;
+          error.hidden = false;
+        }
+      })
+      .finally(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      });
   });
 }

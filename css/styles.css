@@ -865,6 +865,21 @@ body.nav-open {
   display: none;
 }
 
+.form-error {
+  padding: var(--space-3);
+  background: #FDEAEA;
+  color: #9B1C1C;
+  border: 1px solid #F3C2C2;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.form-error[hidden] {
+  display: none;
+}
+
 /* ============================== */
 /* Footer */
 /* ============================== */
