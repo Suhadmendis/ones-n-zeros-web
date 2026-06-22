@@ -96,3 +96,9 @@ Placeholders (must stay literal, never invented): `EMAIL_PLACEHOLDER`, `WHATSAPP
 - [x] Check mobile (375px) / tablet (768px) / desktop (1280px) layouts
 - [x] Check `prefers-reduced-motion` and keyboard focus states
 - [x] Confirm logo renders correctly on light vs dark backgrounds
+
+## Batch 9 — Hero/background imagery
+
+- [x] `assets/images/hero-coding.jpg` — B&W photo (people coding on laptops), sourced from `cruip/open-react-template` (`public/images/hero-image-01.jpg`, GPL-3.0). Used with the explicit knowledge/approval of the site owner despite that repo's "don't redistribute the template" clause, since only one image asset is reused here, not the template itself.
+- [x] `.hero--photo` modifier (homepage hero only): photo background + dark/accent gradient overlay, text swapped to existing `--color-on-dark` tokens
+- [x] Subtle CSS-generated dot-grid pattern added to base `.hero` (light, covers tms.html), `.page-hero` (light, covers about/services/technologies/contact), and `.section--dark` (dark variant, covers the homepage flagship banner) — no further photos needed, zero additional licensing exposure

@@ -157,7 +157,10 @@ h3 { font-size: 1.25rem; }
 }
 
 .section--dark {
-  background: var(--color-ink);
+  background-color: var(--color-ink);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 28px 28px;
   color: var(--color-on-dark);
 }
 
@@ -233,12 +236,14 @@ h3 { font-size: 1.25rem; }
   background: var(--color-bg-subtle);
 }
 
-.section--dark .btn-secondary {
+.section--dark .btn-secondary,
+.hero--photo .btn-secondary {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.section--dark .btn-secondary:hover {
+.section--dark .btn-secondary:hover,
+.hero--photo .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -451,6 +456,9 @@ body.nav-open {
 /* ============================== */
 .hero {
   padding: var(--space-7) 0 var(--space-6);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(54, 59, 59, 0.08) 1px, transparent 0);
+  background-size: 28px 28px;
 }
 
 .hero-content {
@@ -476,9 +484,41 @@ body.nav-open {
   margin-right: auto;
 }
 
+.hero--photo {
+  position: relative;
+  background-image: url('../assets/images/hero-coding.jpg');
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+
+.hero--photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, rgba(54, 59, 59, 0.94) 0%, rgba(54, 59, 59, 0.88) 45%, rgba(184, 31, 41, 0.55) 100%);
+}
+
+.hero--photo .eyebrow {
+  color: var(--color-on-dark);
+}
+
+.hero--photo h1 {
+  color: var(--color-on-dark);
+}
+
+.hero--photo .lead {
+  color: var(--color-on-dark-soft);
+}
+
 .page-hero {
+  position: relative;
   padding: var(--space-6) 0 var(--space-5);
-  background: var(--color-bg-subtle);
+  background-color: var(--color-bg-subtle);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(54, 59, 59, 0.08) 1px, transparent 0);
+  background-size: 28px 28px;
 }
 
 .page-hero .container {
