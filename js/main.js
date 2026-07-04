@@ -45,7 +45,8 @@ function initMobileNav() {
     document.body.classList.add('nav-open');
   }
 
-  toggle.addEventListener('click', function () {
+  toggle.addEventListener('click', function (event) {
+    event.stopPropagation();
     var isOpen = panel.classList.contains('is-open');
     if (isOpen) {
       closeMenu();
