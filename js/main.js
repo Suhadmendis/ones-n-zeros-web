@@ -1,9 +1,40 @@
 document.addEventListener('DOMContentLoaded', function () {
+  initDashboardMocks();
   initStickyHeader();
   initMobileNav();
   initScrollReveal();
   initConsultationForm();
 });
+
+function initDashboardMocks() {
+  var mounts = document.querySelectorAll('[data-dashboard-mock]');
+  if (!mounts.length) return;
+
+  var markup = ''
+    + '<div class="dashboard-mock__bar">'
+    + '<span></span><span></span><span></span>'
+    + '<div class="dashboard-mock__tabs"><em>Overview</em><em>Fleet</em><em>Reports</em></div>'
+    + '</div>'
+    + '<div class="dashboard-mock__body">'
+    + '<div class="dashboard-mock__map">'
+    + '<svg viewBox="0 0 220 140" preserveAspectRatio="none"><path d="M14,120 C70,40 130,110 206,20"></path></svg>'
+    + '<span class="pin pin--start"></span>'
+    + '<span class="pin pin--end"></span>'
+    + '</div>'
+    + '<div class="dashboard-mock__stats">'
+    + '<div class="stat-chip"><span class="stat-chip__label">Active Vehicles</span><span class="stat-chip__value">128</span></div>'
+    + '<div class="stat-chip"><span class="stat-chip__label">On-Time Trips</span><span class="stat-chip__value">96%</span></div>'
+    + '<div class="dashboard-mock__bars">'
+    + '<i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:35%"></i><i style="--h:80%"></i><i style="--h:55%"></i><i style="--h:70%"></i>'
+    + '</div>'
+    + '</div>'
+    + '</div>';
+
+  mounts.forEach(function (mount) {
+    mount.classList.add('dashboard-mock');
+    mount.innerHTML = markup;
+  });
+}
 
 function initStickyHeader() {
   var header = document.querySelector('[data-header]');

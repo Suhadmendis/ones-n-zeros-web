@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-LK">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ones and Zeros | Enterprise Software Development Company in Sri Lanka</title>
   <meta name="description" content="Ones and Zeros is a Sri Lanka-based software engineering company building enterprise software, business automation, and transport management solutions for growing organizations.">
   <link rel="canonical" href="SITE_URL_PLACEHOLDER/">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <meta name="geo.region" content="LK-11">
+  <meta name="geo.placename" content="Ratmalana, Sri Lanka">
+  <meta name="geo.position" content="6.8280;79.9200">
+  <meta name="ICBM" content="6.8280, 79.9200">
 
   <meta property="og:title" content="Ones and Zeros | Enterprise Software Development Company in Sri Lanka">
   <meta property="og:description" content="Custom enterprise software, business automation, and logistics technology built around the way your business operates.">
@@ -14,19 +24,22 @@
   <meta property="og:image" content="SITE_URL_PLACEHOLDER/assets/logo/2.png">
   <meta property="og:site_name" content="Ones and Zeros">
   <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" href="assets/logo/1.png">
+  <meta name="twitter:title" content="Ones and Zeros | Enterprise Software Development Company in Sri Lanka">
+  <meta name="twitter:description" content="Custom enterprise software, business automation, and logistics technology built around the way your business operates.">
+  <meta name="twitter:image" content="SITE_URL_PLACEHOLDER/assets/logo/2.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/images/hero-coding.webp" fetchpriority="high">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ProfessionalService",
     "name": "Ones and Zeros",
     "url": "SITE_URL_PLACEHOLDER/",
     "logo": "SITE_URL_PLACEHOLDER/assets/logo/1.png",
@@ -35,6 +48,13 @@
       "addressLocality": "Ratmalana",
       "addressCountry": "LK"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 6.8280,
+      "longitude": 79.9200
+    },
+    "areaServed": "Sri Lanka",
+    "priceRange": "$$",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+94772774022",
@@ -48,12 +68,13 @@
 
   <header class="site-header" data-header>
     <div class="container nav">
-      <a href="index.html" class="nav-logo"><img src="assets/logo/1.png" alt="Ones and Zeros"></a>
+      <a href="index.html" class="nav-logo"><picture><source srcset="assets/logo/1.webp" type="image/webp"><img src="assets/logo/1.png" alt="Ones and Zeros" width="76" height="76"></picture></a>
       <nav class="nav-menu" aria-label="Primary">
         <a href="index.html" class="nav-link is-active">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="technologies.html" class="nav-link">Technologies</a>
+        <a href="blog/index.html" class="nav-link">Blog</a>
         <a href="tms.html" class="nav-link">Transport Management System</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
@@ -69,6 +90,7 @@
       <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="technologies.html" class="nav-link">Technologies</a>
+      <a href="blog/index.html" class="nav-link">Blog</a>
       <a href="tms.html" class="nav-link">Transport Management System</a>
       <a href="contact.html" class="nav-link">Contact</a>
       <a href="contact.html#consultation-form" class="btn btn-primary">Book Consultation</a>
@@ -152,19 +174,22 @@
       </div>
     </section>
 
-    <section class="section section--dark">
+    <section class="section section--dark numeral-mark">
       <div class="container">
-        <div class="flagship-banner reveal">
+        <div class="flagship-banner hero-grid hero-grid--split reveal">
           <div>
             <span class="flagship-badge"><i class="fa-solid fa-star"></i> Flagship Solution</span>
             <h2>Transport Management System</h2>
             <p class="lead display-serif" style="font-size:1.5rem;">Built for Logistics, Transport, and Fleet Operations</p>
+            <p class="lead">Manage vehicles, drivers, trips, fuel consumption, expenses, revenue, maintenance, and operational reporting from a centralized platform designed to improve visibility and profitability.</p>
+            <div class="btn-group">
+              <a href="tms.html#live-demo" class="btn btn-primary">View Live Demo</a>
+              <a href="tms.html#brochure" class="btn btn-secondary">Download Product Brochure</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+            </div>
           </div>
-          <p class="lead">Manage vehicles, drivers, trips, fuel consumption, expenses, revenue, maintenance, and operational reporting from a centralized platform designed to improve visibility and profitability.</p>
-          <div class="btn-group">
-            <a href="tms.html#live-demo" class="btn btn-primary">View Live Demo</a>
-            <a href="tms.html#brochure" class="btn btn-secondary">Download Product Brochure</a>
-            <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+          <div class="hero-visual reveal reveal-delay-1" aria-hidden="true">
+            <div data-dashboard-mock></div>
           </div>
         </div>
       </div>
@@ -172,10 +197,24 @@
 
     <section class="section">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Security</span>
-          <h2>Your Data Stays Yours</h2>
-          <p class="lead">Unlike many shared software platforms, our solutions can be deployed in dedicated environments designed for your organization. Your customer information, supplier records, operational data, and business processes remain isolated, secure, and under your control.</p>
+        <div class="security-header reveal">
+          <div class="shield-mark">
+            <svg viewBox="0 0 100 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 4 L92 20 V54 C92 82 74 102 50 112 C26 102 8 82 8 54 V20 Z" stroke="url(#shieldGradHome)" stroke-width="3"></path>
+              <path d="M34 58 L45 69 L68 44" stroke="#D62833" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <defs>
+                <linearGradient id="shieldGradHome" x1="0" y1="0" x2="100" y2="116" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D62833"></stop>
+                  <stop offset="1" stop-color="#D62833" stop-opacity="0.15"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="section-header">
+            <span class="eyebrow">Security</span>
+            <h2>Your Data Stays Yours</h2>
+            <p class="lead">Unlike many shared software platforms, our solutions can be deployed in dedicated environments designed for your organization. Your customer information, supplier records, operational data, and business processes remain isolated, secure, and under your control.</p>
+          </div>
         </div>
         <div class="feature-grid">
           <div class="feature-item reveal"><i class="fa-solid fa-server"></i><span>Dedicated Deployment Options</span></div>
@@ -206,7 +245,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <img src="assets/logo/2.png" alt="Ones and Zeros">
+          <picture><source srcset="assets/logo/2.webp" type="image/webp"><img src="assets/logo/2.png" alt="Ones and Zeros" width="160" height="160"></picture>
           <p>Enterprise software, business automation, and logistics technology built for Sri Lankan organizations.</p>
         </div>
         <div class="footer-col">
@@ -216,6 +255,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
             <li><a href="tms.html">Transport Management System</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
