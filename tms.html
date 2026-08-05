@@ -28,10 +28,9 @@
   <meta name="twitter:description" content="One platform. Complete operational visibility. The Transport Management System built for transport, logistics, and fleet operators.">
   <meta name="twitter:image" content="SITE_URL_PLACEHOLDER/assets/logo/2.png">
 
-  <link rel="icon" href="assets/logo/1.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -136,7 +135,7 @@
 
   <header class="site-header" data-header>
     <div class="container nav">
-      <a href="index.html" class="nav-logo"><picture><source srcset="assets/logo/1.webp" type="image/webp"><img src="assets/logo/1.png" alt="Ones and Zeros"></picture></a>
+      <a href="index.html" class="nav-logo"><picture><source srcset="assets/logo/1.webp" type="image/webp"><img src="assets/logo/1.png" alt="Ones and Zeros" width="76" height="76"></picture></a>
       <nav class="nav-menu" aria-label="Primary">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
@@ -176,15 +175,20 @@
 
   <main>
 
-    <section class="hero">
-      <div class="container hero-content reveal">
-        <span class="flagship-badge" style="background: var(--color-accent-tint); color: var(--color-accent);"><i class="fa-solid fa-star"></i> Flagship Solution</span>
-        <h1>Take Full Control of Your <span class="display-serif">Transport Operations</span></h1>
-        <p class="lead">Manage vehicles, drivers, trips, expenses, revenue, fuel consumption, maintenance, and profitability from one centralized platform.</p>
-        <div class="btn-group">
-          <a href="#live-demo" class="btn btn-primary btn-lg">Launch Live Demo</a>
-          <a href="#brochure" class="btn btn-secondary btn-lg">Download Product Brochure</a>
-          <a href="contact.html" class="btn btn-secondary btn-lg">Contact Sales</a>
+    <section class="hero numeral-mark numeral-mark--tint">
+      <div class="container hero-grid hero-grid--split">
+        <div class="hero-content reveal">
+          <span class="flagship-badge" style="background: var(--color-accent-tint); color: var(--color-accent);"><i class="fa-solid fa-star"></i> Flagship Solution</span>
+          <h1>Take Full Control of Your <span class="display-serif">Transport Operations</span></h1>
+          <p class="lead">Manage vehicles, drivers, trips, expenses, revenue, fuel consumption, maintenance, and profitability from one centralized platform.</p>
+          <div class="btn-group">
+            <a href="#live-demo" class="btn btn-primary btn-lg">Launch Live Demo</a>
+            <a href="#brochure" class="btn btn-secondary btn-lg">Download Product Brochure</a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Contact Sales</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-1" aria-hidden="true">
+          <div data-dashboard-mock></div>
         </div>
       </div>
     </section>
@@ -261,10 +265,24 @@
 
     <section class="section section--alt">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Security</span>
-          <h2>Enterprise-Grade Data Security</h2>
-          <p class="lead">Your data remains secure, isolated, and under your control. Unlike shared systems that place multiple organizations within the same environment, our deployment options are designed to provide greater separation, privacy, and security.</p>
+        <div class="security-header reveal">
+          <div class="shield-mark">
+            <svg viewBox="0 0 100 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 4 L92 20 V54 C92 82 74 102 50 112 C26 102 8 82 8 54 V20 Z" stroke="url(#shieldGradTms)" stroke-width="3"></path>
+              <path d="M34 58 L45 69 L68 44" stroke="#D62833" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <defs>
+                <linearGradient id="shieldGradTms" x1="0" y1="0" x2="100" y2="116" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D62833"></stop>
+                  <stop offset="1" stop-color="#D62833" stop-opacity="0.15"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="section-header">
+            <span class="eyebrow">Security</span>
+            <h2>Enterprise-Grade Data Security</h2>
+            <p class="lead">Your data remains secure, isolated, and under your control. Unlike shared systems that place multiple organizations within the same environment, our deployment options are designed to provide greater separation, privacy, and security.</p>
+          </div>
         </div>
         <div class="feature-grid">
           <div class="feature-item reveal"><i class="fa-solid fa-server"></i><span>Dedicated Infrastructure Options</span></div>
@@ -334,7 +352,7 @@
       </div>
     </section>
 
-    <section class="section section--dark">
+    <section class="section section--dark numeral-mark">
       <div class="container">
         <div class="cta-banner reveal" style="background: rgba(255,255,255,0.06);">
           <h2>Ready to Modernize Your Transport Operations?</h2>
@@ -353,7 +371,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <picture><source srcset="assets/logo/2.webp" type="image/webp"><img src="assets/logo/2.png" alt="Ones and Zeros"></picture>
+          <picture><source srcset="assets/logo/2.webp" type="image/webp"><img src="assets/logo/2.png" alt="Ones and Zeros" width="160" height="160"></picture>
           <p>Enterprise software, business automation, and logistics technology built for Sri Lankan organizations.</p>
         </div>
         <div class="footer-col">

@@ -28,15 +28,13 @@
   <meta name="twitter:description" content="Custom enterprise software, business automation, and logistics technology built around the way your business operates.">
   <meta name="twitter:image" content="SITE_URL_PLACEHOLDER/assets/logo/2.png">
 
-  <link rel="icon" href="assets/logo/1.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="preload" as="image" href="assets/images/hero-coding.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-coding.webp" fetchpriority="high">
 
   <script type="application/ld+json">
   {
@@ -176,19 +174,22 @@
       </div>
     </section>
 
-    <section class="section section--dark">
+    <section class="section section--dark numeral-mark">
       <div class="container">
-        <div class="flagship-banner reveal">
+        <div class="flagship-banner hero-grid hero-grid--split reveal">
           <div>
             <span class="flagship-badge"><i class="fa-solid fa-star"></i> Flagship Solution</span>
             <h2>Transport Management System</h2>
             <p class="lead display-serif" style="font-size:1.5rem;">Built for Logistics, Transport, and Fleet Operations</p>
+            <p class="lead">Manage vehicles, drivers, trips, fuel consumption, expenses, revenue, maintenance, and operational reporting from a centralized platform designed to improve visibility and profitability.</p>
+            <div class="btn-group">
+              <a href="tms.html#live-demo" class="btn btn-primary">View Live Demo</a>
+              <a href="tms.html#brochure" class="btn btn-secondary">Download Product Brochure</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+            </div>
           </div>
-          <p class="lead">Manage vehicles, drivers, trips, fuel consumption, expenses, revenue, maintenance, and operational reporting from a centralized platform designed to improve visibility and profitability.</p>
-          <div class="btn-group">
-            <a href="tms.html#live-demo" class="btn btn-primary">View Live Demo</a>
-            <a href="tms.html#brochure" class="btn btn-secondary">Download Product Brochure</a>
-            <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+          <div class="hero-visual reveal reveal-delay-1" aria-hidden="true">
+            <div data-dashboard-mock></div>
           </div>
         </div>
       </div>
@@ -196,10 +197,24 @@
 
     <section class="section">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Security</span>
-          <h2>Your Data Stays Yours</h2>
-          <p class="lead">Unlike many shared software platforms, our solutions can be deployed in dedicated environments designed for your organization. Your customer information, supplier records, operational data, and business processes remain isolated, secure, and under your control.</p>
+        <div class="security-header reveal">
+          <div class="shield-mark">
+            <svg viewBox="0 0 100 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 4 L92 20 V54 C92 82 74 102 50 112 C26 102 8 82 8 54 V20 Z" stroke="url(#shieldGradHome)" stroke-width="3"></path>
+              <path d="M34 58 L45 69 L68 44" stroke="#D62833" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <defs>
+                <linearGradient id="shieldGradHome" x1="0" y1="0" x2="100" y2="116" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D62833"></stop>
+                  <stop offset="1" stop-color="#D62833" stop-opacity="0.15"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="section-header">
+            <span class="eyebrow">Security</span>
+            <h2>Your Data Stays Yours</h2>
+            <p class="lead">Unlike many shared software platforms, our solutions can be deployed in dedicated environments designed for your organization. Your customer information, supplier records, operational data, and business processes remain isolated, secure, and under your control.</p>
+          </div>
         </div>
         <div class="feature-grid">
           <div class="feature-item reveal"><i class="fa-solid fa-server"></i><span>Dedicated Deployment Options</span></div>

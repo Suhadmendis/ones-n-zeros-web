@@ -28,10 +28,9 @@
   <meta name="twitter:description" content="Custom software development services built around your business: enterprise software, automation, websites, AI, and logistics technology.">
   <meta name="twitter:image" content="SITE_URL_PLACEHOLDER/assets/logo/2.png">
 
-  <link rel="icon" href="assets/logo/1.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -145,7 +144,7 @@
 
   <header class="site-header" data-header>
     <div class="container nav">
-      <a href="index.html" class="nav-logo"><picture><source srcset="assets/logo/1.webp" type="image/webp"><img src="assets/logo/1.png" alt="Ones and Zeros"></picture></a>
+      <a href="index.html" class="nav-logo"><picture><source srcset="assets/logo/1.webp" type="image/webp"><img src="assets/logo/1.png" alt="Ones and Zeros" width="76" height="76"></picture></a>
       <nav class="nav-menu" aria-label="Primary">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
@@ -185,10 +184,25 @@
 
   <main>
 
-    <section class="page-hero">
+    <section class="page-hero numeral-mark numeral-mark--tint">
       <div class="container">
         <span class="eyebrow">What We Do</span>
         <h1>Software Solutions Built Around <span class="display-serif">Your Business</span></h1>
+        <div class="services-radial reveal" aria-hidden="true">
+          <svg class="services-radial__lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <line x1="50" y1="50" x2="50" y2="8"></line>
+            <line x1="50" y1="50" x2="89.9" y2="37"></line>
+            <line x1="50" y1="50" x2="74.7" y2="84"></line>
+            <line x1="50" y1="50" x2="25.3" y2="84"></line>
+            <line x1="50" y1="50" x2="10.1" y2="37"></line>
+          </svg>
+          <div class="services-radial__center"><span>01</span></div>
+          <div class="services-radial__node" style="top:8%; left:50%;"><i class="fa-solid fa-building-columns"></i><em>Enterprise Software</em></div>
+          <div class="services-radial__node" style="top:37%; left:89.9%;"><i class="fa-solid fa-gears"></i><em>Automation</em></div>
+          <div class="services-radial__node" style="top:84%; left:74.7%;"><i class="fa-solid fa-globe"></i><em>Websites</em></div>
+          <div class="services-radial__node" style="top:84%; left:25.3%;"><i class="fa-solid fa-brain"></i><em>AI Solutions</em></div>
+          <div class="services-radial__node" style="top:37%; left:10.1%;"><i class="fa-solid fa-truck-fast"></i><em>Logistics</em></div>
+        </div>
       </div>
     </section>
 
@@ -298,7 +312,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <picture><source srcset="assets/logo/2.webp" type="image/webp"><img src="assets/logo/2.png" alt="Ones and Zeros"></picture>
+          <picture><source srcset="assets/logo/2.webp" type="image/webp"><img src="assets/logo/2.png" alt="Ones and Zeros" width="160" height="160"></picture>
           <p>Enterprise software, business automation, and logistics technology built for Sri Lankan organizations.</p>
         </div>
         <div class="footer-col">
